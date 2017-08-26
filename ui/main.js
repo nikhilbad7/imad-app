@@ -13,8 +13,7 @@ button.onclick=function(){
 request.open("GET","http://nikhilbadani.imad.hasura-app.io/counter",true);
 request.send(null);
     };
-    var name=document.getElementById("name").value;
-    var submit=document.getElementById("sub");
+   
     submit.onclick=function(){
             var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
@@ -31,6 +30,8 @@ request.send(null);
            }
        }
     };
+     var name=document.getElementById("name").value;
+    var submit=document.getElementById("sub");
     request.open("GET","http://nikhilbadani.imad.hasura-app.io/submit-name?name="+ name,true);
 request.send(null);
     };
