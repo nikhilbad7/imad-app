@@ -22,4 +22,5 @@ request.send(null);
           list+="<li>" + names[i] +"</li>";
       }  
       var ui=document.getElementById("nameslist");
+      ui.innerHTML=list;
     };
